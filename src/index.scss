@@ -1,0 +1,54 @@
+@import '~bootstrap/scss/bootstrap';
+@import './styling/normalize.css';
+
+/*General Styles*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat;
+}
+
+p {
+  font-family: Raleway;
+}
+
+/*header*/
+#intro {
+  padding: 3rem 0;
+  position: fixed;
+  top: 0;
+  background-color: #00204a;
+  width: 100%;
+  height: 100%;
+
+  .container {
+    height: 100%;
+  }
+
+  h1 {
+    color: #d9faff;
+  }
+
+  button {
+    background: none;
+    border: none;
+    svg {
+      color: #d9faff;
+      font-size: 4em;
+    }
+  }
+}
+
+/*nav*/
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
