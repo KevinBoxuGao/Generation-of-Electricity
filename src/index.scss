@@ -1,5 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
-@import "./styling/normalize.css";
+@import "./normalize.css";
 
 /*General Styles*/
 h1,
@@ -24,98 +24,4 @@ html {
 button {
   background: none;
   outline: none;
-}
-
-/*header*/
-.vertical-center {
-  min-height: 100%; /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
-
-  display: flex;
-  align-items: center;
-}
-
-#intro {
-  z-index: 1;
-  position: absolute;
-
-  width: 100%;
-  min-height: 100%;
-  background-color: #00204a;
-
-  h1 {
-    color: #d9faff;
-  }
-
-  .circuit-diagram {
-    display: inline-block;
-    margin: 2rem 0;
-    img {
-      height: auto;
-      max-width: 100%;
-    }
-  }
-
-  button {
-    margin: 0.5rem 0;
-    background: none;
-    border: none;
-    svg {
-      color: #d9faff;
-      font-size: 4em;
-    }
-  }
-}
-
-/*nav*/
-#sidebar {
-  padding: 0;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  border-right: 1px solid grey;
-
-  .sidebar-header {
-    padding: 1em;
-    border-bottom: 1px solid grey;
-  }
-
-  nav {
-    max-height: calc(100vh - 5.5rem);
-    overflow: auto;
-  }
-}
-
-.nav-link {
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-.sub-nav {
-  display: none;
-}
-
-/* Main Content */
-main {
-  display: none;
-
-  section {
-    display: none;
-  }
-
-  button {
-    background: none;
-    border: none;
-    outline: none;
-    svg {
-      color: grey;
-      font-size: 4rem;
-    }
-  }
-}
-
-/*basics*/
-#basics {
-  display: block;
 }

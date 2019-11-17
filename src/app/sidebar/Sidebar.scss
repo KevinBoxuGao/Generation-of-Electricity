@@ -1,0 +1,31 @@
+/*nav*/
+#sidebar {
+  padding: 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  border-right: 1px solid grey;
+
+  .sidebar-header {
+    padding: 1em;
+    border-bottom: 1px solid grey;
+  }
+
+  nav {
+    max-height: calc(100vh - 5.5rem);
+    overflow: auto;
+  }
+}
+
+.nav-link {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.sub-nav {
+  display: none;
+  &.active {
+    display: block;
+  }
+}

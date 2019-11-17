@@ -1,0 +1,40 @@
+/*header*/
+.vertical-center {
+  min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+#intro {
+  z-index: 1;
+  position: absolute;
+
+  width: 100%;
+  min-height: 100%;
+  background-color: #00204a;
+
+  h1 {
+    color: #d9faff;
+  }
+
+  .circuit-diagram {
+    display: inline-block;
+    margin: 2rem 0;
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+  }
+
+  .closeHeaderButton {
+    margin: 0.5rem 0;
+    background: none;
+    border: none;
+    svg {
+      color: #d9faff;
+      font-size: 4em;
+    }
+  }
+}
