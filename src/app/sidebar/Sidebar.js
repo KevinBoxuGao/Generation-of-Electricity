@@ -10,7 +10,8 @@ class Sidebar extends Component {
         <div className="sidebar-header">
           <h4>Generation of Electricity</h4>
         </div>
-        <nav>
+
+        <nav class="sidebar-nav">
           <div className="nav-item">
             <Link to="/basics" className="nav-link" page="basics">
               Basics
