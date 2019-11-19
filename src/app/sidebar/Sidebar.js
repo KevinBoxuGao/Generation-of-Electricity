@@ -9,6 +9,12 @@ class Sidebar extends Component {
       <div id="sidebar" className="col-12 col-md-3 col-xl-2">
         <div className="sidebar-header">
           <h4>Generation of Electricity</h4>
+          <button
+            class="btn toggle-sidebar"
+            onClick={() => $("#sidebar nav").toggle()}
+          >
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
 
         <nav class="sidebar-nav">

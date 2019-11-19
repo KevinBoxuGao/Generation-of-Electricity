@@ -1,31 +1,57 @@
+@import "~bootstrap/scss/bootstrap";
+
 /*nav*/
 #sidebar {
   padding: 0;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  border-right: 1px solid grey;
-
   .sidebar-header {
     padding: 1em;
     border-bottom: 1px solid grey;
   }
 
   nav {
-    max-height: calc(100vh - 5.5rem);
-    overflow: auto;
+    display: none;
+    border-bottom: 1px solid grey;
+  }
+
+  .nav-link {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  h4 {
+    margin: 0;
+    display: inline-block;
+  }
+
+  .sub-nav {
+    display: none;
+    &.active {
+      display: block;
+    }
   }
 }
 
-.nav-link {
-  &:hover {
-    cursor: pointer;
-  }
-}
+@include media-breakpoint-up(md) {
+  #sidebar {
+    padding: 0;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    border-right: 1px solid grey;
 
-.sub-nav {
-  display: none;
-  &.active {
-    display: block;
+    .sidebar-header {
+      border-bottom: 1px solid grey;
+      .btn {
+        display: none;
+      }
+    }
+
+    nav {
+      border-bottom: none;
+      display: block;
+      max-height: calc(100vh - 5.5rem);
+      overflow: auto;
+    }
   }
 }
