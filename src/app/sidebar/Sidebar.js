@@ -4,20 +4,24 @@ import $ from "jquery";
 import "./Sidebar.scss";
 
 class Sidebar extends Component {
+  subNavClick = section => {
+    $("#" + section).gotoAnchor();
+  };
+
   render() {
     return (
       <div id="sidebar" className="col-12 col-md-3 col-xl-2">
         <div className="sidebar-header">
           <h4>Generation of Electricity</h4>
           <button
-            class="btn toggle-sidebar"
-            onClick={() => $("#sidebar nav").toggle()}
+            className="btn toggle-sidebar"
+            onClick={() => $("#sidebar nav").toggleClass("active")}
           >
-            <i class="fas fa-bars"></i>
+            <i className="fas fa-bars"></i>
           </button>
         </div>
 
-        <nav class="sidebar-nav">
+        <nav className="sidebar-nav">
           <div className="nav-item">
             <Link to="/basics" className="nav-link" page="basics">
               Basics
@@ -29,7 +33,7 @@ class Sidebar extends Component {
               }
             >
               <li>
-                <a>Definitions</a>
+                <a href="#definitions">Definitions</a>
               </li>
             </ul>
           </div>
@@ -48,10 +52,10 @@ class Sidebar extends Component {
               }
             >
               <li>
-                <a>Generation</a>
+                <a href="#generation">Generation</a>
               </li>
               <li>
-                <a>Faraday's Law</a>
+                <a href="#faradays-law">Faraday's Law</a>
               </li>
             </ul>
           </div>
@@ -68,10 +72,10 @@ class Sidebar extends Component {
               }
             >
               <li>
-                <a>Light</a>
+                <a href="#light">Light</a>
               </li>
               <li>
-                <a>Motor</a>
+                <a href="#motor">Motor</a>
               </li>
             </ul>
           </div>
@@ -86,10 +90,10 @@ class Sidebar extends Component {
               }
             >
               <li>
-                <a>Sources</a>
+                <a href="#sources">Sources</a>
               </li>
               <li>
-                <a>About</a>
+                <a href="#about">About</a>
               </li>
             </ul>
           </div>

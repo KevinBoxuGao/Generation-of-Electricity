@@ -2,15 +2,26 @@
 
 /*nav*/
 #sidebar {
+  vertical-align: middle;
   padding: 0;
+  border-bottom: 1px solid grey;
   .sidebar-header {
+    display: flex;
     padding: 1em;
-    border-bottom: 1px solid grey;
+    align-content: center;
+    justify-content: space-between;
+
+    .toggle-sidebar {
+      padding: 0 0.5rem;
+      margin-left: 0.5rem;
+    }
   }
 
   nav {
     display: none;
-    border-bottom: 1px solid grey;
+    &.active {
+      display: block;
+    }
   }
 
   .nav-link {
