@@ -2,22 +2,31 @@
 
 /*nav*/
 #sidebar {
+  .nav-item.active {
+    margin-bottom: 1rem;
+  }
+
   vertical-align: middle;
   padding: 0;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #c4c4c4;
   .sidebar-header {
+    h4 {
+      font-weight: 600;
+    }
     display: flex;
     padding: 1em;
     align-content: center;
     justify-content: space-between;
 
     .toggle-sidebar {
+      box-shadow: none;
       padding: 0 0.5rem;
       margin-left: 0.5rem;
     }
   }
 
   nav {
+    padding-bottom: 1rem;
     display: none;
     &.active {
       display: block;
@@ -25,8 +34,15 @@
   }
 
   .nav-link {
+    padding: 0.25rem 1.5rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.65);
     &:hover {
+      color: rgba(0, 0, 0, 0.85);
       cursor: pointer;
+    }
+    &.active {
+      color: rgba(0, 0, 0, 0.85);
     }
   }
 
@@ -36,29 +52,41 @@
   }
 
   .sub-nav {
+    list-style: none;
+    color: rgba(0, 0, 0, 0.65);
     display: none;
     &.active {
+      padding: 0;
       display: block;
+      a:hover {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.85);
+      }
+    }
+
+    a {
+      color: rgba(0, 0, 0, 0.65);
+      padding: 0.25rem 1.5rem;
     }
   }
 }
 
 @include media-breakpoint-up(md) {
   #sidebar {
-    padding: 0;
     position: sticky;
     top: 0;
     height: 100vh;
-    border-right: 1px solid grey;
+    border-right: 1px solid #c4c4c4;
 
     .sidebar-header {
-      border-bottom: 1px solid grey;
+      border-bottom: 1px solid #c4c4c4;
       .btn {
         display: none;
       }
     }
 
     nav {
+      padding: 1rem 0;
       border-bottom: none;
       display: block;
       max-height: calc(100vh - 5.5rem);

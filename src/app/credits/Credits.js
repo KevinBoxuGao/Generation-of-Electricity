@@ -8,7 +8,7 @@ export default function Credits() {
 
       <div id="sources">
         <h2>Sources</h2>
-        <p>MLA formatted biliography:</p>
+        <p className="subtitle">MLA formatted biliography:</p>
         <ul>
           <li>
             “AC vs DC (Alternating Current vs Direct Current).” Diffen,

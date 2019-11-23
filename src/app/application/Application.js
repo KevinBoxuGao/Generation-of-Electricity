@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import nextPageButton from "../../../assets/Next Page Arrow.svg";
 
 export default function Application() {
   return (
     <section id="application">
       <h1>Applications</h1>
-      <p>
+      <p className="subtitle">
         Examples of how we use electricity as well as how the electricity
         provides energy to our technologies.
       </p>
@@ -55,9 +57,9 @@ export default function Application() {
       </div>
       <div className="next-page-button" page="application" next-page="credits">
         <h4>Credits</h4>
-        <button>
-          <img src="../assets/Next Page Arrow.svg" />
-        </button>
+        <Link to="/credits">
+          <img src={nextPageButton} />
+        </Link>
       </div>
     </section>
   );

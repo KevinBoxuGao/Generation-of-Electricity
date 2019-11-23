@@ -1,10 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import nextPageButton from "../../../assets/Next Page Arrow.svg";
 
 export default function Basics() {
   return (
     <section id="basics">
       <h1>Basics</h1>
-      <p>Some fundamental concepts to know before continuing</p>
+      <p className="subtitle">
+        Some fundamental concepts to know before continuing
+      </p>
 
       <div id="definitions">
         <h2>Definitions</h2>
@@ -30,9 +34,9 @@ export default function Basics() {
         next-page="generation-of-electricity"
       >
         <h4>Generation of Electricity</h4>
-        <button>
-          <img src="../assets/Next Page Arrow.svg" />
-        </button>
+        <Link to="/generation">
+          <img src={nextPageButton} />
+        </Link>
       </div>
     </section>
   );

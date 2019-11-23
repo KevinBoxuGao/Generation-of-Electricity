@@ -22,8 +22,20 @@ class Sidebar extends Component {
         </div>
 
         <nav className="sidebar-nav">
-          <div className="nav-item">
-            <Link to="/basics" className="nav-link" page="basics">
+          <div
+            className={
+              "nav-item " +
+              (this.props.location.pathname === "/basics" ? "active" : "")
+            }
+          >
+            <Link
+              to="/basics"
+              className={
+                "nav-link " +
+                (this.props.location.pathname === "/basics" ? "active" : "")
+              }
+              page="basics"
+            >
               Basics
             </Link>
             <ul
@@ -37,10 +49,19 @@ class Sidebar extends Component {
               </li>
             </ul>
           </div>
-          <div className="nav-item">
+
+          <div
+            className={
+              "nav-item " +
+              (this.props.location.pathname === "/generation" ? "active" : "")
+            }
+          >
             <Link
               to="/generation"
-              className="nav-link"
+              className={
+                "nav-link " +
+                (this.props.location.pathname === "/generation" ? "active" : "")
+              }
               page="generation-of-electricity"
             >
               Electricity Generation
@@ -59,8 +80,23 @@ class Sidebar extends Component {
               </li>
             </ul>
           </div>
-          <div className="nav-item">
-            <Link to="/application" className="nav-link" page="application">
+
+          <div
+            className={
+              "nav-item " +
+              (this.props.location.pathname === "/application" ? "active" : "")
+            }
+          >
+            <Link
+              to="/application"
+              className={
+                "nav-link " +
+                (this.props.location.pathname === "/application"
+                  ? "active"
+                  : "")
+              }
+              page="application"
+            >
               Applications
             </Link>
             <ul
@@ -79,8 +115,21 @@ class Sidebar extends Component {
               </li>
             </ul>
           </div>
-          <div className="nav-item">
-            <Link to="/credits" className="nav-link" page="credits">
+
+          <div
+            className={
+              "nav-item " +
+              (this.props.location.pathname === "/credits" ? "active" : "")
+            }
+          >
+            <Link
+              to="/credits"
+              className={
+                "nav-link " +
+                (this.props.location.pathname === "/credits" ? "active" : "")
+              }
+              page="credits"
+            >
               Credits
             </Link>
             <ul
