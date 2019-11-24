@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+
 import "./App.scss";
 
 import Header from "./header/Header";
@@ -12,12 +14,23 @@ import Credits from "./credits/Credits";
 //dev
 import { hot } from "react-hot-loader";
 
-//function component
+const firstChild = props => {
+  const childrenArray = React.Children.toArray(props.children);
+  return childrenArray[0] || null;
+};
+
 function App() {
   return (
     <Router>
-      <Route exact path={"/"} component={Header} />
-
+      <Route
+        exact
+        path="/"
+        children={({ match, ...rest }) => (
+          <TransitionGroup component={firstChild}>
+            {match && <Header {...rest} />}
+          </TransitionGroup>
+        )}
+      />
       <div className="container-fluid">
         <div className="row flex-xl-nowrap">
           <Sidebar />

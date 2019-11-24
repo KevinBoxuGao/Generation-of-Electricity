@@ -1,15 +1,17 @@
 import React from "react";
+import "./Credits.scss";
 
 export default function Credits() {
   return (
     <section id="credits">
       <h1>Credits</h1>
-      <p>Everything that made this project possible</p>
+      <p className="subtitle">Everything that made this project possible</p>
 
       <div id="sources">
         <h2>Sources</h2>
-        <p className="subtitle">MLA formatted biliography:</p>
-        <ul>
+
+        <p>MLA formatted biliography:</p>
+        <ul className="bibliography">
           <li>
             “AC vs DC (Alternating Current vs Direct Current).” Diffen,
             www.diffen.com/difference/Alternating_Current_vs_Direct_Current.

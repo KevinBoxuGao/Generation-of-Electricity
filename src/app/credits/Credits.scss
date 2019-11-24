@@ -1,0 +1,17 @@
+@import "~bootstrap/scss/bootstrap";
+
+.bibliography {
+  list-style: none;
+
+  li {
+    text-indent: -2em;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .bibliography {
+    li {
+      font-size: 0.7rem;
+    }
+  }
+}

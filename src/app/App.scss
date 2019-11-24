@@ -1,7 +1,8 @@
+@import "~bootstrap/scss/bootstrap";
+
 /* Main Content */
 main {
   padding: 1rem 2rem;
-  padding-left: 3rem !important;
   button {
     background: none;
     border: none;
@@ -36,10 +37,20 @@ main {
   }
 
   .next-page-button {
-    margin: 1rem;
+    padding: 1rem 0;
     display: flex;
     text-align: center;
     justify-content: center;
     flex-direction: column;
+    a {
+      display: inline-block;
+      height: 100%;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  main {
+    padding-left: 3rem !important;
   }
 }
