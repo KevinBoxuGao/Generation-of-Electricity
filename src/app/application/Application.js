@@ -21,17 +21,19 @@ export default function Application() {
         <p>The ways we use electricity to generate light:</p>
         <ul>
           <li>
-            Incandescent: electricity heats up metal to create heat that creates
-            light
+            Incandescent: electricity heats up a metal filament to create heat
+            that releases energy as light.
           </li>
           <li>
-            Fluorescent: electrons collide with mercury atoms that excite the
-            atoms, bumping electrons to higher energy levels that eventually
-            return to their original energy level by releasing light photons.
+            Fluorescent: electrons from electric current collide with mercury
+            atoms that excite the atoms, bumping electrons to higher energy
+            levels that eventually return to their original energy level by
+            releasing ultraviolet light. This light is then absorbed by a
+            phosphor coating that releases visible light.
           </li>
           <li>
-            LED: semi conductors cause the current to release energy as
-            photons(light)
+            LED: semi conductors restrict movement of electrons and cause the
+            current to release energy as photons(light).
           </li>
         </ul>
 
