@@ -32,8 +32,9 @@ export default function Application() {
             phosphor coating that releases visible light.
           </li>
           <li>
-            LED: semi conductors restrict movement of electrons and cause the
-            current to release energy as photons(light).
+            LED: semi conductors in a diode restrict movement of electrons in
+            one direction that contains electron holes that cause electrons to
+            release light when travelling through it.
           </li>
         </ul>
 
