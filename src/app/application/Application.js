@@ -1,6 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import './Application.scss'
 import nextPageButton from "../../../assets/Next Page Arrow.svg";
+import Incandescent from "../../../assets/Incandescent Light Bulb.svg";
+import Fluorescent from "../../../assets/Fluorescent Light Bulb.svg";
+import LED from "../../../assets/LED.svg";
 
 export default function Application() {
   return (
@@ -38,10 +42,24 @@ export default function Application() {
           </li>
         </ul>
 
-        <div className="light-diagrams">
-          <div></div>
-          <div></div>
-          <div></div>
+        <div className="light-diagrams container">
+          <div className="row">
+            <div className="col-12 col-md-4 text-center">
+              <div className="diagram">
+                <img src={Incandescent}/>
+              </div>
+            </div>
+            <div className="col-12 col-md-4 text-center">
+              <div className="diagram">
+                <img src={Fluorescent}/>
+              </div>
+            </div>
+            <div className="col-12 col-md-4 text-center">
+              <div className="diagram">
+                <img className="my-auto" src={LED}/>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
