@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './Application.scss'
+import "./Application.scss";
 import nextPageButton from "../../../assets/Next Page Arrow.svg";
 import Incandescent from "../../../assets/Incandescent Light Bulb.svg";
 import Fluorescent from "../../../assets/Fluorescent Light Bulb.svg";
@@ -46,17 +46,17 @@ export default function Application() {
           <div className="row">
             <div className="col-12 col-md-4 text-center">
               <div className="diagram">
-                <img src={Incandescent}/>
+                <img src={Incandescent} />
               </div>
             </div>
             <div className="col-12 col-md-4 text-center">
               <div className="diagram">
-                <img src={Fluorescent}/>
+                <img src={Fluorescent} />
               </div>
             </div>
             <div className="col-12 col-md-4 text-center">
               <div className="diagram">
-                <img className="my-auto" src={LED}/>
+                <img className="my-auto" src={LED} />
               </div>
             </div>
           </div>
@@ -68,11 +68,14 @@ export default function Application() {
         <p>
           A current of electrons also creates a magnetic field as the electrons
           are in motion, which creates a circular magnetic field since each
-          electron itself is a tiny magnet. This current flow through the rotor
-          which is surrounded has a south and north pole of a magnet going
-          through it. This causes the rotor to spin since the magnetic field of
-          the rotor to oppose the magnetic field of the stationary magnets and
-          cause it to spin since opposite poles repel.
+          electron itself is a tiny magnet. This current flows through the rotor
+          which creates a magnetic field around it while having a south and
+          north pole of a magnet going through it. This causes the rotor to spin
+          since the magnetic field of the rotor opposes the magnetic field of
+          the stationary magnets and cause it to spin since opposite poles
+          repel. Normally, the rotor would go back to its place one the current
+          is turned off but if the current is reversed continuously it will
+          cause the motor to continuously spin.
         </p>
         <div className="motor-diagram"></div>
       </div>
