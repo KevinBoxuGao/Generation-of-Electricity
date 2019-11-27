@@ -26,3 +26,14 @@
     }
   }
 }
+
+.motor-diagram {
+
+  .motor {
+    min-width: 60%; 
+  }
+  .arrow {
+    display: inline-block;
+    transform: rotate(90deg);
+  }
+}

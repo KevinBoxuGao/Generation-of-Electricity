@@ -1,10 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Application.scss";
+
 import nextPageButton from "../../../assets/Next Page Arrow.svg";
+
 import Incandescent from "../../../assets/Incandescent Light Bulb.svg";
 import Fluorescent from "../../../assets/Fluorescent Light Bulb.svg";
 import LED from "../../../assets/LED.svg";
+
+import MotorDiagram from "../../../assets/Motor Diagram.svg";
+import Arrow from "../../../assets/arrow.svg";
+import MotorDiagramAfter from "../../../assets/Motor Diagram After.svg";
 
 export default function Application() {
   return (
@@ -77,7 +83,13 @@ export default function Application() {
           is turned off but if the current is reversed continuously it will
           cause the motor to continuously spin.
         </p>
-        <div className="motor-diagram"></div>
+        <div className="motor-diagram container">
+          <div className="row d-flex flex-column">  
+            <img className="motor" src={MotorDiagram}></img>
+            <img src={Arrow} className="arrow"></img>
+            <img className="motor" src={MotorDiagramAfter}></img>
+          </div>
+        </div>
       </div>
       <div className="next-page-button" page="application" next-page="credits">
         <h4>Credits</h4>
