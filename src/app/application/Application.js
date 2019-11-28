@@ -48,7 +48,7 @@ export default function Application() {
           </li>
         </ul>
 
-        <div className="light-diagrams container">
+        <div className="light-diagrams container-fluid">
           <div className="row">
             <div className="col-12 col-md-4 text-center">
               <div className="diagram">
@@ -83,11 +83,17 @@ export default function Application() {
           is turned off but if the current is reversed continuously it will
           cause the motor to continuously spin.
         </p>
-        <div className="motor-diagram container">
-          <div className="row d-flex flex-column">  
-            <img className="motor" src={MotorDiagram}></img>
-            <img src={Arrow} className="arrow"></img>
-            <img className="motor" src={MotorDiagramAfter}></img>
+        <div className="motor-diagram container-fluid">
+          <div className="row">
+            <div className="col col-md-5.5">
+              <img className="motor" src={MotorDiagram}></img>
+            </div>
+            <div className="col col-md-1">
+              <img src={Arrow} className="arrow"></img>
+            </div>
+            <div className="col col-md-5.5">
+              <img className="motor" src={MotorDiagramAfter}></img>
+            </div>
           </div>
         </div>
       </div>

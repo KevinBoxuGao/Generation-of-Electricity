@@ -1,0 +1,21 @@
+.circuit-magnet {
+  .circuit {
+    width: 100%;
+  }
+
+  .magnet-row {
+    margin: 4%;
+  }
+
+  .magnet {
+    width: 5%;
+    left: 40%;
+  }
+
+  .electron {
+    position: absolute;
+    width: 5%;
+    left: 40%;
+    top: -3%;
+  }
+}

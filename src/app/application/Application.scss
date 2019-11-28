@@ -4,7 +4,6 @@
   margin-bottom: 1rem;
 }
 
-
 .diagram {
   background: #e1e1e1;
   margin-bottom: 1rem;
@@ -14,7 +13,6 @@
     width: 100%;
   }
 }
-
 
 @include media-breakpoint-up(md) {
   .diagram {
@@ -28,12 +26,4 @@
 }
 
 .motor-diagram {
-
-  .motor {
-    min-width: 60%; 
-  }
-  .arrow {
-    display: inline-block;
-    transform: rotate(90deg);
-  }
 }

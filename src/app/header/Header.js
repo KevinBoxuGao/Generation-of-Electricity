@@ -4,6 +4,7 @@ import $ from "jquery";
 import "./header.scss";
 
 import CircuitDiagram from "../../../assets/Circuit Diagram.svg";
+import Electron from "../../../assets/Electron-Blue.svg";
 
 class Header extends React.Component {
   handleClick = () => {
@@ -17,7 +18,10 @@ class Header extends React.Component {
           <h1>Generation of Electricity</h1>
           <div>
             <div className="circuit-diagram">
-              <img src={CircuitDiagram} />
+              <div>
+                <img src={CircuitDiagram} />
+                <img className="electron" src={Electron} />
+              </div>
             </div>
           </div>
           <Link
