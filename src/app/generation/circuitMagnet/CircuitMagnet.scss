@@ -3,19 +3,45 @@
     width: 100%;
   }
 
+  .diagram-container {
+    padding: 2rem;
+  }
+
+  .circuit-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .button {
+    border-radius: 6px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #c4c4c4;
+    &:hover {
+      color: #111111;
+      background-color: #d3d3d3;
+    }
+  }
+
   .magnet-row {
+    width: 100%;
     margin: 4%;
+    margin-bottom: 11%;
+    height: 11.25%;
   }
 
   .magnet {
+    overflow: auto;
+    position: absolute;
     width: 5%;
-    left: 40%;
+    left: 20%;
   }
 
   .electron {
+    top: 0;
+    overflow: auto;
     position: absolute;
     width: 5%;
-    left: 40%;
-    top: -3%;
+    left: 20%;
   }
 }
