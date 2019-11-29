@@ -33,7 +33,7 @@ const firstChild = props => {
 function App() {
   return (
     <Router>
-      <Route path="/" component={Header} />
+      <Route path="/Generation-of-Electricity" component={Header} />
       <div className="container-fluid">
         <div className="row flex-xl-nowrap">
           <Sidebar />
