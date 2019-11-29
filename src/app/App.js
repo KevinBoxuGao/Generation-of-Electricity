@@ -23,7 +23,6 @@ function App() {
   return (
     <Router>
       <Route
-        exact
         path="/"
         children={({ match, ...rest }) => (
           <TransitionGroup component={firstChild}>
