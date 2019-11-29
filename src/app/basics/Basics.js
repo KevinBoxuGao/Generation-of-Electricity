@@ -41,7 +41,7 @@ class Basics extends React.Component {
         >
           <h4>Generation of Electricity</h4>
           <div>
-            <Link to="/generation">
+            <Link to="/Generation-of-Electricity/generation">
               <img src={nextPageButton} />
             </Link>
           </div>
