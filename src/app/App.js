@@ -14,6 +14,17 @@ import Credits from "./credits/Credits";
 //dev
 import { hot } from "react-hot-loader";
 
+/*
+<Route exact
+  path="/"
+  children={({ match, ...rest }) => (
+    <TransitionGroup component={firstChild}>
+      {match && <Header {...rest} />}
+    </TransitionGroup>
+  )}
+/>
+*/
+
 const firstChild = props => {
   const childrenArray = React.Children.toArray(props.children);
   return childrenArray[0] || null;
@@ -22,14 +33,7 @@ const firstChild = props => {
 function App() {
   return (
     <Router>
-      <Route
-        path="/"
-        children={({ match, ...rest }) => (
-          <TransitionGroup component={firstChild}>
-            {match && <Header {...rest} />}
-          </TransitionGroup>
-        )}
-      />
+      <Route path="/" component={Header} />
       <div className="container-fluid">
         <div className="row flex-xl-nowrap">
           <Sidebar />

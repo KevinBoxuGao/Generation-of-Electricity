@@ -11,10 +11,6 @@ class Header extends React.Component {
     $("#intro").animate({ bottom: "100vh" });
   };
 
-  testAnimation = () => {
-    $(".electron").animate({ left: "100%" });
-  };
-
   render() {
     return (
       <header id="intro" className="vertical-center">
