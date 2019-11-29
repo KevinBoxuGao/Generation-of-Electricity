@@ -9,13 +9,13 @@ class Basics extends React.Component {
       <section id="basics">
         <h1>Basics</h1>
         <p className="subtitle">
-          Some fundamental concepts to know before continuing
+          Some fundamental concepts to know before continuing.
         </p>
 
         <div id="definitions">
           <h2>Definitions</h2>
           <p>
-            Here we have out general definitions and the meanings behind them
+            Here we have out general definitions and the meanings behind them.
           </p>
           <ul>
             <li>Electricity: The movement of electric charge(electrons).</li>
@@ -26,11 +26,12 @@ class Basics extends React.Component {
             </li>
           </ul>
           <p>
-            Electricity is the movement of our electrons, current is going to be
-            the flow of the electrons while a conductor is a material that
-            freely allows electrons to flow through it. Note that the flow of
-            electrons is the flow of the materials own electrons and not other
-            materials.
+            Electricity is the movement of electrons, a current is going to be
+            the flow of the electrons, while a conductor is a material that
+            freely allows electrons to flow through it including its own. Note
+            that the electrons in a circuit are those of the conductor and are
+            manipulated by outside energies to move and create a current instead
+            of having electrons be transferred in and out of the material.
           </p>
         </div>
         <div

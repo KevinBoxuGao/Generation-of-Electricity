@@ -11,6 +11,10 @@ class Header extends React.Component {
     $("#intro").animate({ bottom: "100vh" });
   };
 
+  testAnimation = () => {
+    $(".electron").animate({ left: "100%" });
+  };
+
   render() {
     return (
       <header id="intro" className="vertical-center">
@@ -20,7 +24,6 @@ class Header extends React.Component {
             <div className="circuit-diagram">
               <div>
                 <img src={CircuitDiagram} />
-                <img className="electron" src={Electron} />
               </div>
             </div>
           </div>

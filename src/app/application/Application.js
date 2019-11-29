@@ -78,21 +78,22 @@ export default function Application() {
           which creates a magnetic field around it while having a south and
           north pole of a magnet going through it. This causes the rotor to spin
           since the magnetic field of the rotor opposes the magnetic field of
-          the stationary magnets and cause it to spin since opposite poles
+          the stationary magnets and causes it to spin since opposite poles
           repel. Normally, the rotor would go back to its place one the current
           is turned off but if the current is reversed continuously it will
           cause the motor to continuously spin.
         </p>
         <div className="motor-diagram container-fluid">
           <div className="row">
-            <div className="col col-md-5.5">
-              <img className="motor" src={MotorDiagram}></img>
+            <div className="col-12 col-md-6">
+              <div className="diagram">
+                <img className="motor" src={MotorDiagram}></img>
+              </div>
             </div>
-            <div className="col col-md-1">
-              <img src={Arrow} className="arrow"></img>
-            </div>
-            <div className="col col-md-5.5">
-              <img className="motor" src={MotorDiagramAfter}></img>
+            <div className="col-12 col-md-6">
+              <div className="diagram motor-after-container">
+                <img className="motor motor-after" src={MotorDiagramAfter} />
+              </div>
             </div>
           </div>
         </div>

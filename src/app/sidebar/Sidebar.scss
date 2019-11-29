@@ -30,6 +30,10 @@
     display: none;
     &.active {
       display: block;
+      -webkit-transition: height 1.5s ease-in-out;
+      -moz-transition: height 1.5s ease-in-out;
+      -o-transition: height 1.5s ease-in-out;
+      transition: height 1.5s ease-in-out;
     }
   }
 

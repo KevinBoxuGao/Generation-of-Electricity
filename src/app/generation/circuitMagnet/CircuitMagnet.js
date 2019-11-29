@@ -8,16 +8,14 @@ import Electron from "../../../../assets/Electron-Yellow.svg";
 
 class CircuitMagnet extends Component {
   handleClick = () => {
-    $(".magnet").animate({left: "+=60%"}, 1500);
-    $(".electron").animate({left: "+=60%"}, 1500);
-    $(".magnet").animate({left: "-=60%"}, 1500);
+    $(".magnet").animate({ left: "+=60%" }, 1500);
+    $(".electron").animate({ left: "+=60%" }, 1500);
+    $(".magnet").animate({ left: "-=60%" }, 1500);
     $(".electron").animate({ left: "-=60%" }, 1500);
   };
   render() {
     return (
       <div className="circuit-magnet container-fluid">
-        <div className="magnet-row row justify-content-center">
-        </div>
         <div className="row justify-content-center">
           <div className="col col-md-9 diagram-container d-flex">
             <img className="magnet" src={Magnet} />
@@ -26,7 +24,9 @@ class CircuitMagnet extends Component {
           </div>
         </div>
         <div className="row justify-content-center">
-          <button className="button" onClick={() => this.handleClick()}>Play Animation</button>
+          <button className="button" onClick={() => this.handleClick()}>
+            Play Animation
+          </button>
         </div>
       </div>
     );
