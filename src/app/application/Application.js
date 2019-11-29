@@ -101,7 +101,7 @@ export default function Application() {
       <div className="next-page-button" page="application" next-page="credits">
         <h4>Credits</h4>
         <div>
-          <Link to="/credits">
+          <Link to="Generation-of-Electricity/credits">
             <img src={nextPageButton} />
           </Link>
         </div>

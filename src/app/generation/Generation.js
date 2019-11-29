@@ -51,7 +51,7 @@ class Generation extends React.Component {
           >
             <h4>Applications</h4>
             <div>
-              <Link to="/application">
+              <Link to="Generation-of-Electricity/application">
                 <img src={nextPageButton} />
               </Link>
             </div>
