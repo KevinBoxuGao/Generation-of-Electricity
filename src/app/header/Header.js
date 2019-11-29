@@ -28,7 +28,7 @@ class Header extends React.Component {
             </div>
           </div>
           <Link
-            to="/basics"
+            to="Generation-of-electricity/basics"
             className="closeHeaderButton"
             onClick={() => this.handleClick()}
           >
