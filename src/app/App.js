@@ -34,19 +34,10 @@ function App() {
         <div className="row flex-xl-nowrap">
           <Sidebar />
           <main className="col-12 col-md-9 col-xl-10">
-            <Route path="Generation-of-Electricity/basics" component={Basics} />
-            <Route
-              path="Generation-of-Electricity/generation"
-              component={Generation}
-            />
-            <Route
-              path="Generation-of-Electricity/application"
-              component={Application}
-            />
-            <Route
-              path="Generation-of-Electricity/credits"
-              component={Credits}
-            />
+            <Route path="/basics" component={Basics} />
+            <Route path="/generation" component={Generation} />
+            <Route path="/application" component={Application} />
+            <Route path="/credits" component={Credits} />
           </main>
         </div>
       </div>

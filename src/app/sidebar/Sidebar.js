@@ -29,7 +29,7 @@ class Sidebar extends Component {
             }
           >
             <Link
-              to="Generation-of-Electricity/basics"
+              to="/basics"
               className={
                 "nav-link " +
                 (this.props.location.pathname === "/basics" ? "active" : "")
@@ -57,12 +57,12 @@ class Sidebar extends Component {
             }
           >
             <Link
-              to="Generation-of-Electricity/generation"
+              to="/generation"
               className={
                 "nav-link " +
                 (this.props.location.pathname === "/generation" ? "active" : "")
               }
-              page="generation-of-electricity"
+              page=""
             >
               Electricity Generation
             </Link>
@@ -88,7 +88,7 @@ class Sidebar extends Component {
             }
           >
             <Link
-              to="Generation-of-Electricity/application"
+              to="/application"
               className={
                 "nav-link " +
                 (this.props.location.pathname === "/application"
@@ -123,7 +123,7 @@ class Sidebar extends Component {
             }
           >
             <Link
-              to="Generation-of-Electricity/credits"
+              to="/credits"
               className={
                 "nav-link " +
                 (this.props.location.pathname === "/credits" ? "active" : "")
